@@ -1,0 +1,589 @@
+<!doctype html>
+<html>
+<head>
+<title>learning css</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>
+body{
+	    background-image:url("image/flower.jpg");
+		background-position:right bottom;
+		background-attachment:fixed;
+		background-repeat:no-repeat;
+		background-size:500px;
+		
+		
+		}
+	h1{
+	color:solid black;
+	
+	
+	}
+     .my-style{
+	        font-size:110%;
+			font-family: 'Roboto', sans-serif;
+			
+			font-weight:bolder;
+			color:red;}
+		.align{text-align:center;}	
+	    .decoration1{text-decoration:underline;
+		              text-shadow:5px 3px 5px red;
+					   }
+	    .decoration2{text-indent:50px;}
+		.decoration{text-align:justify;
+		              text-transform:uppercase;
+					  word-spacing:50px;}
+					  
+		.love{color:red;
+		     font-size:50px;}
+			 
+			 
+		.container{background-color:hotpink;
+                   width:300px;
+                  padding:10px;
+                border:10px solid black;
+                margin:5px;
+                  }				
+		
+		.para{
+                 background-color:white;
+                padding:10px;
+				border-left:5px yellow solid;
+				border-right:5px green solid;
+				border-top:5px red solid;
+				border-bottom:5px orange solid;
+				margin:10px;
+				width:300px;
+				
+				}
+			 
+			.d1{background-color:yellow;
+			    max-width:auto;
+				margin:auto;
+				border:3px solid black;}
+				
+				
+			a.my-link:hover{color:red;}
+			 a:hover{color:green;}
+			 
+			input:hover{background-color:yellow;}
+			input::placeholder{color:green;}
+			
+			
+	table,tr,td{border:1px solid black;}
+tr:nth-child(odd)
+             {background-color:yellow;}	
+			
+	p.my-link::first-letter, p.my-link::after{color:coral;
+                              font-size:3.5rem;
+							  content:">";}	
+			 p.my-link1::first-line{background:aqua;
+			                    color:black;}
+						  
+						  
+	li:nth-child(odd){background:black;
+                    color:aqua;}	
+						  
+						  
+	::selection{color:brown;
+                background:aqua;}	
+			.demo::before,.demo::after{content:'';
+			              width:100%;
+						  height:20px;
+						  background:black;
+						  display:inline-block;
+						  }
+		
+		
+		.gradient-style{height:400px;
+		                  width:100%;
+						  background-image:linear-gradient(to right,white,blue,yellow,aqua);
+						  }
+						  
+						  
+						  
+		#section1{float:left;
+		       
+			   
+                background-color:red;}	
+		#section3{float:left;
+                    background-color:blue;}
+		 #section2{float:left;
+                    background-color:green;}
+					
+					
+			.div5{background-color:brown;
+		      height:300px;
+			  width:50%;
+			  border:5px solid black;
+			  padding:10px;
+			  float:left;
+			  box-sizing:border-box;
+			  
+			  }
+	    .div6{background-color:green;
+		     height:300px;
+			 width:50%;
+			 padding:10px;
+			 border:5px solid black;
+			 box-sizing:border-box;
+			 float:left;
+			 }	
+img{height:400px;
+   width:300px;
+   opacity:0.5;}
+img:hover{opacity:1;}  
+
+.navbar-div{ border:3px solid green;
+            padding:5px;
+			position:static;
+			left:10px;
+			bottom:0px;
+			
+			}
+	.div1{ border:3px solid black;
+            padding:5px;
+			position:relative;
+			left:50px;
+			height:100px;
+			width:200px;
+			
+			}
+   	.div2{ border:3px solid black;
+            padding:5px;
+			position:relative;
+			left:50px;
+			height:200px;
+			width:400px;
+			
+			}
+		.div3{ border:3px solid black;
+            padding:5px;
+			position:absolute;
+			padding:5px;
+			left:150px;
+			bottom:5px;
+		
+		
+			
+			}
+		
+	.flex-container{background-color:yellow;
+                    display:flex;
+                    flex-flow:wrap row;
+					justify-content:center;
+							align-items:center;
+							height:400px;}					
+		
+		.flex-container>div{width:100px;
+		                    background-color:aqua;
+							font-size:35px;
+							margin:10px;
+							padding:20px;
+							}
+		
+		.grid-container{display:grid;
+		                grid-template-columns:150px auto auto auto auto;
+						grid-column-gap:10px;
+						grid-row-gap:10px;
+						}
+						
+		.item0{grid-column:1/3;
+		       grid-row:1/4; }				
+						
+						
+		.grid-container>div{background-color:chocolate;
+		                    border:1px solid black;
+							text-align:center;
+							padding:5px;}
+		
+		.grid-container1>div{background-color:blue;
+		                     border:1px solid black;
+							 font-size:1.5rem;
+							 justify-content:center;
+							 align-content:center;
+							 }
+							 
+		.item1{grid-area:header;}					 
+		.item2{grid-area:menu;}		
+        .item3{grid-area:main;}				
+		.item4{grid-area:aside;}							 
+		.item5{grid-area:footer;}
+
+        .grid-container1{display:grid;
+               grid-template-areas:
+              'header header header header header header'
+              'menu menu main main aside aside'
+              'footer footer footer footer footer footer' ;
+              text-align:center;	}		  
+			  
+			  
+			  
+		.grid-container2{display:grid;
+		                 grid-template-columns:repeat(auto-fill,minmax(200px,1fr));
+                        }		
+			  
+			  
+		.grid-container2>div{border:solid;
+                            padding:5px;}		
+			  
+			  
+		
+	.body{ margin:0;
+	      padding:0;
+	
+	      box-sizing:border-box;
+	     height:80vh;
+         display:grid;
+		 text-align:center;
+         grid-template-rows:min-content auto min-content;
+         grid-template-areas:'h'
+                             'm'
+                             'm'
+                             'm'
+                             'f'  ;							 
+		 }
+			  
+		
+
+header{grid-area:h;
+        background:pink;
+		width:70%;
+		height:50px;
+		border:solid black;}
+
+main{background-color:aqua;
+      grid-area:m;
+	  width:70%;
+	  height:100%;
+	  border:solid black;}
+	  
+article{display:grid;
+        grid-template-areas:	  
+                's1 a1'
+				's2 a2'
+				's3 .' ;
+		height:100%;}
+
+
+section{border:solid;
+         background-color:green;
+		 height:100%;}
+
+aside{background-color:coral;
+          border:solid;
+		  height:100%;}
+
+footer{grid-area:f;
+       width:70%;
+	   height:50px;
+	   
+	   display:grid;
+	   grid-template-areas:'n1 n2' ;
+	   border:solid black;
+	   background-color:darkgoldenrod;}
+
+
+
+#section1{grid-area:s1;}
+#section2{grid-area:s2;}
+#section3{grid-area:s3;}
+#aside1{grid-area:a1;}
+#aside2{grid-area:a2;}
+#nav1{grid-area:n1;}
+#nav2{grid-area:n2;}
+
+
+@media screen and (max-width:600px){
+                         article{grid-template-areas:
+						                's1'
+										's2'
+										'a1'
+										'a2' ;}
+						footer{grid-template-areas:
+                                           'n1'
+                                           'n2'	;}									   
+										
+								}		
+										
+	.tooltip{position:relative;}									
+										
+	.tooltip-text{visibility:hidden;
+	            width:200px;									
+                background-color:indigo;
+                 color:white;
+				 padding:10px;
+				 border-radius:5px;
+				 position:absolute;
+				 top:20px;
+				 left:20px;
+				 z-index:1;
+				}
+
+  .tooltip:hover .tooltip-text{visibility:visible;}     
+
+.overflow{  height:100px;
+           width:250px;
+		   background-color:yellow;
+		   border:1px solid black;
+		   overflow:auto;}
+
+		   
+	#z1{background:black;
+              height:250px;
+          width:250px;
+              position:absolute;
+              z-index:2;
+                }
+    #z2{background:yellow;
+            height:250px;
+          width:250px;
+			position:relative;
+               left:150px;
+            top:150px;
+			z-index:1;
+			}
+	   
+		   
+#shadow{width:200px;
+        background-color:brown;
+        border:2px solid black;
+        box-shadow:20px 15px teal;
+		
+		margin:0 auto;}		
+		   
+		
+		
+</style>
+
+
+</head>
+<body>
+
+  <h1 class="align decoration1">I am from Bangladesh</h1>
+  <h2 > I am from Feni</h2>
+  <div class="d1"><p class=" decoration2 decoration3 my-link "> my names ayesha.i live in feni.i am from bangladesh.my religion is islam&i love islam.alhamdulillah for everything of my life and i am so much greatful to Allah.Learn to write in English with confidence. Our online self-study, live classes and one-to-one courses with personal tutors are designed by some of the world's English teaching experts. </p></div><b>
+<p class="decoration container"> hey how are you <span class="love">❤</span></p><br>
+<p class="para">this is a paragraph</p><br>
+
+<a class="my-link" href="#">tutorial</a><br>
+
+<a href="#">Home</a>
+<a href="#">my home</a><br>
+
+<input type="text" placeholder="Enter your name"><br>
+<div class="container">
+<table>
+   <tr>
+   <td>Name</td>
+   <td>Age</td>
+   </tr>
+   <tr>
+   <td>anis</td>
+   <td> 30</td>
+   </tr>
+   </table>
+</div><br><p>
+<ul>
+   <li>home1</li>
+   <li>home2</li>
+   <li>home3</li>
+   <li>home4</li>
+   </ul><br>
+   <div class="demo">
+<p class="my-link1">Our writing assistant supports clean writing with suggestions that go beyond grammar. Write engaging and polished content that excites your customers with the right tone. Easily Improve Any Text. Improve Word Choice. Find and Add Sources Fast.</p>
+<p>my names....</p>
+
+</div>
+
+
+<div class="gradient-style"></div><br>
+<div>
+<div id="section1"> <h1>bangladesh</h1></div>
+<div id="section2"><h1>finland</h1></div>
+<div id="section3"><h1>country</h1></div>
+</div><br/>
+
+
+<div><p>  </p></div><p><br>
+<div><p>  </p></div><p><br>
+
+
+
+<div class="div5">
+<p>In two years, biopharmaceutical companies have gone from zero to 13 billion COVID-19 vaccine doses produced. They’ve worked across the industry and on every continent to meet the global demand for COVID-19 innovation. Yet global trade officials will gather for the World Trade Organization (WTO) ministerial meeting in June to debate whether and how to allow countries to confiscate intellectual property (IP) rights for pandemic-related products as part of the WTO’s Trade-Related Aspects of Intellectual Property Rights (TRIPS) Agreement. Here are three reasons that underscore why it’s unthinkable to focus on IP waivers, and where policymakers should concentrate efforts instead.</p>
+</div>
+<div class="div6"><p>In two years, biopharmaceutical companies have gone from zero to 13 billion COVID-19 vaccine doses produced. They’ve worked across the industry and on every continent to meet the global demand for COVID-19 innovation. Yet global trade officials will gather for the World Trade Organization (WTO) ministerial meeting in June to debate whether and how to allow countries to confiscate intellectual property (IP) rights for pandemic-related products as part of the WTO’s Trade-Related Aspects of Intellectual Property Rights (TRIPS) Agreement. Here are three reasons that underscore why it’s unthinkable to focus on IP waivers, and where policymakers should concentrate efforts instead</p></div>
+
+
+
+
+<img src="image/angry.png">
+<img src="image/back.jpg"><br>
+
+
+
+
+<div class="navbar-div">
+   <a href="#"> home </a></div><br/>
+   
+  <div class="div1">
+  <p>In two years, biopharmaceutical 
+  companies have gone from zero 
+  to 13 billion COVID-19 vaccine 
+  doses produced.</p>
+</div><br>
+<div class="div2">
+
+<p>In two years, biopharmaceutical 
+  companies have gone from zero 
+  to 13 billion COVID-19 vaccine 
+  doses produced.</p>
+ 
+
+
+<div class="div3">
+
+<p>In two years, biopharmaceutical.</div></p>
+
+  </div><br>
+
+
+
+<div class="flex-container">
+<div class="div10">div10</div>
+<div class="div11">div11</div>
+<div class="div12">div12</div>
+<div class="div13">div13</div>
+<div class="div14">div14</div>
+<div class="div15">div15</div>
+<div class="div16">div16</div>
+<div class="div17">div17</div>
+</div><br>
+
+
+
+<div class="grid-container">
+<div class="item0">1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+<div>16</div>
+<div>17</div>
+<div>18</div>
+<div>19</div>
+<div>20</div>
+<div>21</div>
+<div>22</div>
+<div>23</div>
+<div>24</div>
+<div>25</div>
+<div>26</div>
+</div><br>
+
+<div class="grid-container1">
+<div class="item1"><h1>Header</h1></div>
+<div class="item2"><h1>Menu</h1></div>
+<div class="item3"><h1>Main</h1></div>
+<div class="item4"><h1>Aside</h1></div>
+<div class="item5"><h1>Footer</h1></div>
+</div><br>
+
+<div class="grid-container2">
+  <div><p>The construction journey was started by China Railway Major Bridge Engineering Company Limited on 7 December 2014.
+  The whole construction was completed by May 2022. 
+</p></div>
+
+<div><p>The construction journey was started by China Railway Major Bridge Engineering Company Limited on 7 December 2014.
+  The whole construction was completed by May 2022. 
+</p></div>
+
+<div><p>The construction journey was started by China Railway Major Bridge Engineering Company Limited on 7 December 2014.
+  The whole construction was completed by May 2022. 
+</p></div>
+
+<div><p>The construction journey was started by China Railway Major Bridge Engineering Company Limited on 7 December 2014.
+  The whole construction was completed by May 2022. 
+</p></div>
+<div><p>The construction journey was started by China Railway Major Bridge Engineering Company Limited on 7 December 2014.
+  The whole construction was completed by May 2022. 
+</p></div>
+<div><p>The construction journey was started by China Railway Major Bridge Engineering Company Limited on 7 December 2014.
+  The whole construction was completed by May 2022. 
+</p></div>
+</div><br>
+<div class="body">
+<header>
+     <nav>header nav</nav>
+	 </header>
+
+
+<main>
+     <article>
+	        <section id="sec1">section1</section>
+           <section id="sec1">section1</section>
+           <section id="sec1">section1</section>
+		   <aside id="aside1">aside1</aside>
+		   <aside id="aside2">aside2</aside>
+		  	   
+     </article>
+	 </main>
+
+<footer><nav id="nav1">nav1</nav>
+      <nav id="nav2">nav2</nav>
+	  </footer>
+
+</div>
+
+
+
+
+
+
+<a href="#" class="tooltip">
+Facebook
+<span class="tooltip-text">Facebook is a social media</span>
+</a>
+<p>
+
+<div class="overflow">
+<p>In two years, biopharmaceutical 
+  companies have gone from zero 
+  to 13 billion COVID-19 vaccine 
+  doses produced.In two years, biopharmaceutical 
+  companies have gone from zero 
+  to 13 billion COVID-19 vaccine 
+  doses produced.</p>
+</div><br><br>
+
+
+<div id="z1"></div>
+<div id="z2"></div>
+</div><br>
+
+
+<div id="shadow">
+<p>In two years, biopharmaceutical 
+  companies have gone from zero 
+  to 13 billion COVID-19 vaccine 
+  doses produced.</p>
+  </div>
+
+
+
+<img src="https://static.wixstatic.com/media/453b54_3108d8bf558b4c82a7adff293bd3782c~mv2.png/v1/fill/w_504,h_496,al_c,lg_1,q_85,enc_auto/Illustrations2.png">
+
+
+
+</body>
+</html>
